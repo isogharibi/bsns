@@ -1,0 +1,313 @@
+:root {
+    --bg:
+        rgba(39, 58, 137, 1);
+    --primary: rgb(255, 255, 255);
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg);
+}
+
+main {
+    max-width: 390px;
+    margin: 10px auto;
+}
+
+.main-1 {
+    background-color: var(--bg);
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+hr {
+    width: 30px;
+    height: 4px;
+    margin-top: 4px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.phoo {
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.tit {
+    color: var(--white);
+    width: 571px;
+    height: 160px;
+    left: 135px;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.primary-txt {
+    color: var(--primary);
+}
+
+.title-txt {
+    color: var(--white);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.p {
+    font-size: 11px;
+    color:
+        rgb(223, 223, 223);
+    margin-top: -30px;
+    padding-left: 5px;
+    animation-name: exampel;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    position: relative;
+    font-size: 20px;
+}
+
+.satis {
+    color: #E7A651;
+    margin-top: -23px;
+    margin-left: 48px;
+}
+
+.users {
+    margin-left: -23px;
+    margin-top: 10px;
+}
+
+.input {
+    border-radius: 50px;
+    width: 180px;
+    margin-left: 10px;
+    height: 30px;
+    background-color: black;
+    opacity: 0.2;
+    margin-top: 10px;
+}
+
+.numb {
+    width: 170px;
+    height: 48px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white);
+    background: rgba(231, 166, 81, 1);
+    border-radius: 4px;
+    margin-top: 45px;
+    display: block;
+    animation-name: button;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    position: relative;
+    transition: all 1s;
+}
+
+.numb:hover {
+    background-color: transparent;
+    border: solid 3px rgb(167, 167, 167);
+    cursor: pointer;
+    box-shadow: 2px 2px 5000px var(--primary);
+}
+
+.person {
+    width: 28px;
+    margin-left: -179px;
+    margin-top: 10px;
+}
+
+ul {
+    display: none;
+}
+
+.btns {
+    display: flex;
+}
+
+.menue {
+    margin-left: -230px;
+}
+
+.yadet {
+    display: flex;
+    align-items: center;
+}
+
+.title-txte {
+    color: var(--white);
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.primary-text {
+    color: var(--primary);
+    font-size: 45px;
+}
+
+.lgin {
+    margin-right: 50px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes exampel {
+    0% {
+        left: -100px;
+        top: -10px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px
+    }
+}
+
+@keyframes button {
+    0% {
+        left: -100px;
+        top: 10px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .more {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        width: 300px;
+        justify-content: space-between;
+        color: var(--white);
+    }
+
+    .contact {
+        display: flex;
+        width: 130px;
+    }
+
+    .mobile {
+        align-items: center;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .social {
+        display: flex;
+        justify-content: end;
+        margin-right: -590px;
+        margin-top: 140px;
+    }
+
+    .phoo {
+        margin-left: 40px;
+        margin-top: 50px;
+        width: 550px;
+        border-radius: 30px;
+    }
+
+    .cratos-img {
+        width: 400px;
+    }
+
+    .hero-txt {
+        margin-top: 120px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .title-txt {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 17px;
+        margin-top: 30px;
+    }
+
+    .login {
+        width: 100px;
+        height: 30px;
+        background-color: var(--primary);
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--white);
+        border-radius: 9px;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .titl {
+        font-size: 55px;
+    }
+
+    .title-txte {
+        margin-left: 1px;
+    }
+    .menue {
+        display: none;
+    }
+}
